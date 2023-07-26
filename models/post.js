@@ -22,10 +22,10 @@ Posts.init(
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            onDelete: 'CASCADE',
+            // onDelete: 'CASCADE',
             references: {
-                model: user,
-                key: id
+                model: 'user',
+                key: 'id',
             }
         }
     },
