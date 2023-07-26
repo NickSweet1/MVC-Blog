@@ -6,6 +6,6 @@ const postData = {
     user_id: 1
 }
 
-const seedGallery = () => Posts.bulkCreate(postData);
+const seedPosts = () => Posts.bulkCreate(postData);
 
-module.exports = seedGallery;
+module.exports = seedPosts;
