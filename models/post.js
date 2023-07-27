@@ -35,4 +35,4 @@ Posts.init(
     }
 )
 
-module.exports = { Posts }
+module.exports = Posts

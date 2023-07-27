@@ -1,9 +1,9 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+// const { DataTypes } = require('sequelize');
+// const sequelize = require('../config/connection');
 
-const { User } = require('./user');
-const { Posts } = require('./post');
-const { Comments } = require('./comments');
+const User  = require('./user');
+const Posts = require('./post');
+const Comments = require('./comments');
 
 User.hasMany(Posts, {
     foreignKey: 'user_id',
@@ -31,3 +31,5 @@ Comments.belongsTo(Posts, {
     foreignKey: 'post_id',
     onDelete: 'CASCADE',
 })
+
+module.exports = { Comments, User, Posts }

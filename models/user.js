@@ -27,8 +27,8 @@ User.init(
     {
         sequelize,
         modelName: 'User',
-        tableName: 'users',
+        tableName: 'user',
     }
 )
 
-module.exports = { User };
+module.exports = User;

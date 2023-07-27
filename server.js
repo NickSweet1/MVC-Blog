@@ -1,7 +1,7 @@
 const express = require('express'); //loads in express library 
 const { Sequelize } = require('sequelize'); //loads in sequelize library
 const dotenv = require('dotenv'); //loads in dotenv libary
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 dotenv.config(); //loads the variables from the .env file
 
