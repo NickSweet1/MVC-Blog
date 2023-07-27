@@ -15,7 +15,8 @@ User.hasMany(Comments, {
     onDelete: 'CASCADE',
 })
 Posts.belongsTo(User, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
 });
 
 Posts.hasMany(Comments, {
