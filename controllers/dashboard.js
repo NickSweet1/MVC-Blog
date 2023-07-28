@@ -3,7 +3,7 @@ const { Posts, Comments, User} = require('../models');
 
 
 router.get('/', async (req, res) => {
-    res.render('home', {title: 'Home Page'})
+    res.render('dashboard', {title: 'Dashboard'})
 })
 
 module.exports = router;
