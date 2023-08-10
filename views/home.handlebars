@@ -1,6 +1,9 @@
 {{> header }}
-<p> Hello World! </p>
-{{#each Posts}}
-{{> post-details }}
-{{/each}}
+<div>
+  {{#each posts}}
+    <div>
+      <p>{{title}}</p>
+    </div>
+  {{/each}}
+</div>
 {{> footer }}
