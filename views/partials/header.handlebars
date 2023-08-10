@@ -17,11 +17,25 @@
         <a class="nav-link" href="../dashboard">Dashboard</a>
       </li>
     </ul>
+    {{#if logged_in}}
+      <form class="form-inline">
+        <button
+          class="btn btn-sm btn-secondary"
+          type="button"
+          id="logout"
+        >Logout</button>
+      </form>
+    {{else}}
+      <form class="form-inline">
+        <button class="btn btn-sm btn-secondary" type="button"><a
+            href="../login"
+          >Login</a></button>
+      </form>
+    {{/if}}
     <form class="form-inline">
-      <button class="btn btn-sm btn-secondary" type="button"><a href="../login">Login</a></button>
-    </form>
-    <form class="form-inline">
-      <button class="btn btn-sm btn-secondary" type="button"><a href="../register">Register</a></button>
+      <button class="btn btn-sm btn-secondary" type="button"><a
+          href="../register"
+        >Register</a></button>
     </form>
   </div>
 </nav>
